@@ -68,8 +68,13 @@ public class InfluxDBConfig {
                     .logLevel(LogLevel.BASIC)
                     .build();
 
-            influxDBClient = InfluxDBClientFactory
-                    .create(url + "?readTimeout=" + readTimeout + "&connectTimeout=" + connectTimeout + "&logLevel=" + logLevel, token.toCharArray());
+            //完全版配置
+            //influxDBClient = InfluxDBClientFactory
+            //        .create(url + "?readTimeout=" + readTimeout + "&connectTimeout=" + connectTimeout + "&logLevel=" + logLevel, token.toCharArray());
+
+
+            //简易版配置(没有超时设置)
+            influxDBClient = InfluxDBClientFactory.create(options);
 
             influxDBClient.enableGzip();
         } catch (IOException e) {
