@@ -1,11 +1,10 @@
-package com.example.influxdb.config.activate;
+package com.example.influxdb.base.activate;
 
 import com.influxdb.client.DeleteApi;
 import com.influxdb.client.InfluxDBClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.nio.file.OpenOption;
 import java.time.OffsetDateTime;
 import java.util.Optional;
 

@@ -1,6 +1,5 @@
-package com.example.influxdb.config.activate;
+package com.example.influxdb.base.activate;
 
-import com.example.influxdb.config.InfluxDBConfig;
 import com.influxdb.client.InfluxDBClient;
 import com.influxdb.client.QueryApi;
 import com.influxdb.query.dsl.Flux;

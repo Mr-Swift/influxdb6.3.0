@@ -1,4 +1,4 @@
-package com.example.influxdb.config.utils;
+package com.example.influxdb.utils;
 
 import com.influxdb.query.dsl.Flux;
 

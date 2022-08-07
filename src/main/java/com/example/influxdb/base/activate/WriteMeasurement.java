@@ -1,4 +1,4 @@
-package com.example.influxdb.config.activate;
+package com.example.influxdb.base.activate;
 
 import com.influxdb.client.InfluxDBClient;
 import com.influxdb.client.QueryApi;
@@ -29,7 +29,7 @@ public class WriteMeasurement {
     public <T> void writePoint(String bucketName, List<T> list){
         WriteApiBlocking writeApi = influxDBClient.getWriteApiBlocking();
         if (!CollectionUtils.isEmpty(list)) {
-            writeApi.writeMeasurement(bucketName, org, WritePrecision.S, list);
+            writeApi.writeMeasurements(bucketName, org, WritePrecision.S, list);
         }
     }
 }

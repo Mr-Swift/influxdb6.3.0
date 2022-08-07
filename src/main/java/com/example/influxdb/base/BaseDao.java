@@ -1,14 +1,13 @@
-package com.example.influxdb.config.base;
+package com.example.influxdb.base;
 
+import com.example.influxdb.base.activate.DeleteData;
 import com.example.influxdb.config.InfluxDBConfig;
-import com.example.influxdb.config.activate.DeleteData;
-import com.example.influxdb.config.activate.QueryMeasurement;
-import com.example.influxdb.config.activate.WriteMeasurement;
+import com.example.influxdb.base.activate.QueryMeasurement;
+import com.example.influxdb.base.activate.WriteMeasurement;
 import com.influxdb.query.dsl.Flux;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
-import java.net.ConnectException;
 import java.time.OffsetDateTime;
 import java.util.*;
 
